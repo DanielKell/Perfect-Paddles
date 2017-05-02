@@ -1,12 +1,19 @@
 
-p {color: magenta;
-}
-
-header h1 {font-size:12px; text-align: center; margin: 33px;
-background-image: image("sunset-kayak.jpg");
+header h1 {
+    color: white;
+    text-align: center; 
+    height: 500px;
+    margin: 33px;
+    background-image: url("Images/sunset-kayak.jpg");
 }
 
 .container {
+    font-size:100px;
     width:1140px;
     background-color:lightgreen;
     }
+
+    p {
+    color: magenta;
+    font-size: 50px;
+}
