@@ -1,0 +1,24 @@
+header {background: gold;
+padding: 20px 10px 20px 10px;
+overflow:auto;
+font-family: 'Indie Flower', cursive;
+}
+
+header p {
+    float:right;
+}
+
+header h1 {
+    float: left;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: ("images/Cute Bird.jpg");
+    font-family: Arial;
+}
+ul {
+    font-size: 40px;
+}
