@@ -21,18 +21,46 @@
 }
 
 .container {
-    font-size:50px;
+    font-size:20px;
     width:1140px; 
-    background-color: navajowhite;
+    background-color: white;
     }
+
+h6 {
+    font-size: 50px;
+}
 
 .about-text {
     padding: 50px;
 }
 
+.sunset {
+    position: relative;
+    padding-left: 30px;
+}
+
+.adventure {
+    position: relative;
+}
+
+.kayakgirl {
+    position: relative;
+}
     p {
     color: gray;
-    font-size: 50px;
+    font-size: 20px;
+}
+
+.rentals {
+    padding: 50px;
+}
+
+table {
+
+}
+
+thead th {
+    background-color: lightgray;
 }
 
 /*
