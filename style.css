@@ -10,7 +10,7 @@
     color: white;
 }
 
-header h1 {
+.topbox {
     color: white;
     text-align: center; /* How do I get the text to move down in the image? */
     height: 500px;
@@ -26,8 +26,12 @@ header h1 {
     background-color: navajowhite;
     }
 
+.about-text {
+    padding: 50px;
+}
+
     p {
-    color: magenta;
+    color: gray;
     font-size: 50px;
 }
 
