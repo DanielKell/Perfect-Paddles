@@ -1,19 +1,53 @@
 
+.topbar {
+    background-color: black;
+    height: 100px;
+    width: 1140px;
+}
+
+.navbar { 
+    float: right;
+    color: white;
+}
+
 header h1 {
     color: white;
-    text-align: center; 
+    text-align: center; /* How do I get the text to move down in the image? */
     height: 500px;
-    margin: 33px;
-    background-image: url("Images/sunset-kayak.jpg");
+    /* margin: 20px; */
+    background-image: url("Images/kayak-bkgd.jpg"); /* Shorthand this later */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
-    font-size:100px;
-    width:1140px;
-    background-color:lightgreen;
+    font-size:50px;
+    width:1140px; 
+    background-color: navajowhite;
     }
 
     p {
     color: magenta;
     font-size: 50px;
 }
+
+/*
+Typography:
+
+The base font size is 16px for all screen sizes
+The main font family is Karla
+The secondary font family is Pacifico
+Colours:
+
+The HEX code for the body font colour is #2d2d2d
+The HEX code for the medium grey headings is #646464
+The HEX code for orange brand colour is #e2574c (used for links and buttons)
+The HEX code for the darker orange colour is #b64036 (used for the link and button hover state)
+The HEX code for the table header background is #e6e6e6
+The HEX code for the grey table borders #c8c8c8
+The HEX code for the light yellow of the hovered table rows is #fbf6d9
+Screen Sizes
+
+The breakpoint of the desktop-friendly content area is 1140px
+The breakpoint of the tablet-friendly content area is 600px
+*/
