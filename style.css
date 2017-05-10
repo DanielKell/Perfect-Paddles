@@ -34,6 +34,19 @@ h6 {
     padding: 50px;
 }
 
+/* Alternate way to display images:
+.image-banner {
+display: flex;
+justify-content: space-around;
+}
+
+.image-banner img {
+    height: 100%;
+    max-width: 350px;
+    width: 32%;
+}
+*/
+
 .sunset {
     position: relative;
     padding-left: 30px;
@@ -61,6 +74,26 @@ table {
 
 thead th {
     background-color: lightgray;
+}
+
+.footer {
+    background-color: gray;
+    height: 200px; /* Check this is right size later */
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+footer .leftFooter {
+padding-left: 66px;
+display: flex;
+flex-direction: column;
+}
+
+footer .rightFooter {
+padding-right: 100px;
 }
 
 /*
