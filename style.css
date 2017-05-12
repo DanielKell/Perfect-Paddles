@@ -1,13 +1,17 @@
 
+
 .topbar {
     background-color: black;
-    height: 100px;
-    width: 1140px;
+    max-height: 100px;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navbar { 
-    float: right;
+.navIcons { 
+    display: flex;
     color: white;
+    flex-direction: row;
 }
 
 .topbox {
@@ -18,6 +22,31 @@
     background-image: url("Images/kayak-bkgd.jpg"); /* Shorthand this later */
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.15); /* These two lines of code darken the background so it's easier to read text */
+    background-blend-mode: darken; 
+}
+
+.topbox h1 {
+    padding-top: 60px;
+    font-size: 16px;
+}
+
+.topbox h2 {
+    padding-top: 60px;
+    font-size: 80px;
+}
+
+.topbox h3 {
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.topbox h4 {
+    padding-top: 60px;
+}
+
+.topbox h5 {
+    padding-top: 60px;
 }
 
 .container {
@@ -59,9 +88,11 @@ justify-content: space-around;
 .kayakgirl {
     position: relative;
 }
-    p {
+
+p {
     color: gray;
     font-size: 20px;
+   margin-top: 20px;
 }
 
 .rentals {
