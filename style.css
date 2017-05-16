@@ -2,16 +2,30 @@
 
 .topbar {
     background-color: black;
-    max-height: 100px;
+    max-height: 60px;
     max-width: 1140px;
     display: flex;
     justify-content: space-between;
 }
 
-.navIcons { 
+.logoPic {
+    max-width: 250px;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.navIcons ul{ 
     display: flex;
     color: white;
-    flex-direction: row;
+    padding-top: 20px;
+    padding-right: 10px;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.navIcons a {
+    text-decoration: none;
+    color: white;
 }
 
 .topbox {
@@ -47,10 +61,17 @@
 
 .topbox h4 span { /* This targets just the area that has text */
     background-color: rgba(33, 33, 33, 0.6);
+    padding: 5px;
 }
 
 .topbox h5 {
     padding-top: 40px;
+}
+
+.topbox h5 span {
+    background-color: rgb(244, 80, 66);
+    border-radius: 25px; 
+    padding: 10px;
 }
 
 .container {
@@ -97,6 +118,7 @@ p {
     color: gray;
     font-size: 20px;
    margin-top: 30px;
+   max-width: 700px; /* Set to this to make text display more centered in the page */
 }
 
 .rentals {

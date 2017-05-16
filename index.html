@@ -14,13 +14,19 @@
 
         <nav class="topbar">
          <div class="logo">
-           <img src="Images/perfect-paddles-logo.svg"> 
+           <img class="logoPic" src="Images/perfect-paddles-logo.svg"> 
          </div>
           <div class="navIcons"> <!-- How do I make these appear in the right place? -->
            <ul>
-            <li>About</li>
-            <li>Rentals</li>
-            <li>Location</li>
+            <li>
+              <a href="#about">About</a> <!-- To hyperlink add the link here and connect to the id in the class -->
+            </li>
+            <li>
+              <a href="#rentals">Rentals</a>
+            </li>
+            <li>
+              <a href="#location">Location</a>
+            </li>
            </ul>
           </div>
         </nav>
@@ -33,7 +39,7 @@
             <h5><span>SIGN ME UP!</span></h5>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
           <div class="about-text">
             <font face="Pacifico"><center><h6>About</h6></font></center>
             <center><p>Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks. 
@@ -42,12 +48,12 @@
         </section>
 
         <section class="image-banner"> <!-- Can you change these images to be displayed through Flex instead? -->
-          <img class="sunset" src="Images/sunset-kayak.jpg">
+          <img class="sunset" src="Images/sunset-kayak.jpg"> <!-- I still need to put a shadow behind these images -->
           <img class="adventure" src="Images/coffee-adventure.jpg">
           <img class="kayakgirl" src="Images/girl-in-kayak.jpg">
         </section>
 
-        <section class="rentals">
+        <section class="rentals" id="rentals">
           <font face="Pacifico"><center><h6>Rentals</h6></font></center>
           <p>All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.
             <br>
@@ -91,7 +97,7 @@
         </section>
         </header> <!-- Header for Container. Do I need this, can I remove it? -->
 
-        <section class="location">
+        <section class="location" id="location">
           <font face="Pacifico"><center><h6>Location</h6></font></center>
           <center><p>  Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver: </p></center>
           <div class="gMap">
