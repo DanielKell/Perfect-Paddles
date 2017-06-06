@@ -1,0 +1,140 @@
+
+<html>
+   <head> 
+      <meta charset="utf-8"> <!-- Use autoprefixer before finishing: https://autoprefixer.github.io/ -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./reset.css"> 
+      <link rel="stylesheet" href="./style.css">
+      <title>Perfect Paddles Page</title>
+      <link href="https://fonts.googleapis.com/css?family=Karla|Pacifico" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   </head>
+  
+  <body>
+
+<a class="screen-reader-text" href="#about">Skip to about section for more info</a> <!-- For Accessibility -->
+
+       <header class="container"> <!-- Need to adjust this header so it contains the right stuff. -->
+         
+        <nav class="topbar">
+         <div class="logo">
+           <img class="logoPic" src="Images/perfect-paddles-logo.svg"> 
+         </div>
+          <div class="navIcons"> <!-- How do I make these appear in the right place? -->
+           <ul>
+            <li>
+              <a href="#about">About</a> <!-- To hyperlink add the link here and connect to the id in the class -->
+            </li>
+            <li>
+              <a href="#rentals">Rentals</a>
+            </li>
+            <li>
+              <a href="#location">Location</a>
+            </li>
+           </ul>
+          </div>
+        </nav>
+
+        <section class="topbox"> 
+            <h1>ENJOY THE</h1>
+            <font face="Pacifico"><h2>Great Outdoors</h2></font>
+            <font face="Pacifico"><h3>from the water</h3></font>
+              <div class="RentCanoeBox">
+                <h4><span> Rent our canoes year-round, take a lesson, or join a group tour. </span></h4> 
+              </div>
+            <h5><span>SIGN ME UP!</span></h5>
+        </section>
+
+        <section class="about" id="about" tabindex="1">
+          <div class="about-text">
+            <font face="Pacifico"><center><h6>About</h6></font></center>
+            <center><p>Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks. 
+              We cater to all skill levels and abilities, and offer a variety of lessons and tours too. </p></center>
+          </div>
+        </section>
+
+        <section class="image-banner">
+          <img class="sunset" src="Images/sunset-kayak.jpg">
+          <img class="adventure" src="Images/coffee-adventure.jpg">
+          <img class="kayakgirl" src="Images/girl-in-kayak.jpg">
+        </section>
+
+        <section class="rentals" id="rentals">
+          <font face="Pacifico"><center><h6>Rentals</h6></font></center>
+
+          <div class="rentalBox">
+
+          <p>All rental prices include basic paddles, life jackets, splash protection, and a safety demonstration.
+            <br>
+             Please note that we require 24 hours notice for all cancellations and late returns will be charged accordingly.
+            <br>
+             Call <span>604-555-6040</span> to book now!
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Duration</th>
+                <th>Single Kayak</th>
+                <th>Double Kayak</th>
+              </tr>
+            </thead>
+
+              <tbody>
+                <tr>
+                  <td>2 Hours</td>
+                  <td>$35</td>
+                  <td>$55</td>
+                </tr>
+                <tr>
+                  <td>1 Day</td>
+                  <td>$90</td>
+                  <td>$130</td>
+                </tr>
+                <tr>
+                  <td>Extra Day</td>
+                  <td>$45</td>
+                  <td>$65</td>
+                </tr>
+                <tr>
+                  <td>Season Pass</td>
+                  <td>$249</td>
+                  <td>$349</td>
+                </tr>
+              </tbody>
+             </table>
+            </div>
+        </section> <!-- Rentals Section -->
+        </header> <!-- Header for Container. Do I need this, can I remove it? -->
+
+
+        <section class="location" id="location">
+          <font face="Pacifico"><center><h6>Location</h6></font></center>
+          <center><p>  Come visit us at our location on Cornwall Avenue and Yew Street in Vancouver: </p></center>
+          <div class="gMap">
+            <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.2012301068594!2d-123.15717014891965!3d49.272584079305915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486724ac9841e85%3A0x870e9cdab5d0e83b!2sYew+St+%26+Cornwall+Ave%2C+Vancouver%2C+BC!5e0!3m2!1sen!2sca!4v1494629036666" width="1060" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </center>
+          </div>
+        </section>
+
+        <footer class="footer"> <!-- named as footer instead of section so it's easier to nativate and read the code -->
+
+          <div class="leftFooter">
+              <div class="2016"> © 2016 Perfect Paddles Kayak Co. <br></br> Powered by HTML and CSS.</div>
+              <div class="phone"> 604-555-6040. <a href="mailto:info@perfectpaddles.com">info@perfectpaddles.com</a></div>
+              <div class="address"> Cornwall Avenue + Yew Street <br></br> Vancouver, BC, Canada</div> 
+          </div>
+
+          <div class="rightFooter">
+            <ul class="social">
+              <li><a href="#"/><i class="fa fa-facebook"> <span>Facebook</i> </span></a></li>
+              <li><a href="#"/><i class="fa fa-twitter"> <span> Twitter</i> </span></a></li>
+              <li><a href="#"/><i class="fa fa-instagram"> <span> Instagram<span></i></a></li>
+              <li><a href="#"/><i class="fa fa-pinterest"> <span> Pintrest</span></i></a></li>
+              <li><a href="#"/><i class="fa fa-google"> <span> Google+</span></i></a></li>
+            </ul>
+          </div>
+        </footer>
+        </container>
+   </body>
+</html>
