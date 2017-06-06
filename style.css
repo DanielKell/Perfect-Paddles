@@ -56,7 +56,7 @@ justify-content: space-around;
    overflow: hidden;
 }
 
-.screen-reader-text:focus { /* Screen reader "hack" for accessibility purposes */
+.screen-reader-text:focus { /* Screen reader "hack" for accessibility purposes*/
    clip: auto !important;
    display: block;
    height: auto;
