@@ -12,7 +12,9 @@
   
   <body>
 
-       <header class="container">
+<a class="screen-reader-text" href="#about">Skip to about section for more info</a> <!-- For Accessibility -->
+
+       <header class="container"> <!-- Need to adjust this header so it contains the right stuff. -->
          
         <nav class="topbar">
          <div class="logo">
@@ -37,11 +39,13 @@
             <h1>ENJOY THE</h1>
             <font face="Pacifico"><h2>Great Outdoors</h2></font>
             <font face="Pacifico"><h3>from the water</h3></font>
-              <h4><span> Rent our canoes year-round, take a lesson, or join a group tour. </span></h4> 
+              <div class="RentCanoeBox">
+                <h4><span> Rent our canoes year-round, take a lesson, or join a group tour. </span></h4> 
+              </div>
             <h5><span>SIGN ME UP!</span></h5>
         </section>
 
-        <section class="about" id="about">
+        <section class="about" id="about" tabindex="1">
           <div class="about-text">
             <font face="Pacifico"><center><h6>About</h6></font></center>
             <center><p>Perfect Paddles Kayak Rentals Co. offers you the unique opportunity to experience the great outdoors in one of our single or double kayaks. 
