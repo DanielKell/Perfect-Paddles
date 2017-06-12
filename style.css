@@ -116,15 +116,17 @@ justify-content: space-around;
 
 .topbox div {
     background-color: rgba(33, 33, 33, 0.6);
-    margin: 30 20 20 20px;
+    margin: 30 100 20 100px;
 }
 
 .topbox h4 {
     padding-top: 1px;
+    line-height: 33px; /* Why isnt this working??? */
 }
 
 .topbox h4 span { /* This targets just the area that has text */
     padding: 1px;
+    /* background-color: rgba(33, 33, 33, 0.6); */
 }
 
 @media screen and (max-width: 600px) {
@@ -246,6 +248,13 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .rentalBox {
+        flex-wrap: wrap;
+    }
 }
 
 .rentalBox span {
@@ -255,14 +264,30 @@ p {
 
 .rentalBox p {
     max-width: 500px;
-    width: 40%;
+    width: 45%;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .rentalBox p {
+    width: 90%;
+    }
+}
+
+.location p {
+    margin-top: 40px;
 }
 
 table, th, td {
     border: 1px solid #c8c8c8;
     font-family: karla;
     padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    table, th, td {
+        padding: 15px;
+    }
 }
 
 /*Can I condense the below?*/
@@ -272,11 +297,21 @@ tbody tr td:nth-child(2), tbody tr td:nth-child(3) {
 
 table {
     margin-top: 30px;
-    width: 60%;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 95%;
+    }
 }
 
 thead th {
     background-color: #e6e6e6;
+}
+
+th {
+    font-weight: bold;
 }
 
 td:hover {
@@ -299,7 +334,7 @@ td:hover {
     max-height: 400px; /* Check this is right size later */
     max-width: 1140px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 16px;
     color: white;
@@ -322,6 +357,15 @@ padding-left: 2rem;
 display: flex;
 flex-direction: column;
 margin: 3px;
+padding-right: 2.8rem;
+}
+
+@media screen and (max-width: 600px) {
+    footer .leftFooter {
+        padding-top: 50px;
+        text-align: center;
+        line-height: 0.9;
+    }
 }
 
 .leftFooter div {
