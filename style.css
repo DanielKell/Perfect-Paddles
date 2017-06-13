@@ -205,9 +205,10 @@ justify-content: space-around;
 */
 
 .image-banner {
-display: flex;
+display: block;
 justify-content: space-around;
   flex-flow: row; 
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -219,15 +220,15 @@ justify-content: space-around;
 .image-banner img {
     margin: 5px;
     box-shadow: 0px 1px 3px 1px grey;
-    width: 32%;
+    width: 31%;
 }
 
 @media screen and (max-width: 600px) {
     .image-banner img {
     flex-wrap: wrap;
     width: 90%;
-    height: 50%;
-    min-width: 450px;
+    height: auto;
+    min-width: 300px;
 }
 }
 
@@ -334,7 +335,7 @@ td:hover {
     max-height: 400px; /* Check this is right size later */
     max-width: 1140px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 16px;
     color: white;
@@ -345,6 +346,8 @@ td:hover {
 @media screen and (max-width: 600px) {
     .footer {
         flex-wrap: wrap;
+        max-height: none;
+        justify-content: center;
     }
 }
 
@@ -353,11 +356,13 @@ td:hover {
 }
 
 footer .leftFooter {
+padding-top: 1rem;
 padding-left: 2rem;
 display: flex;
 flex-direction: column;
 margin: 3px;
 padding-right: 2.8rem;
+line-height: 0.8;
 }
 
 @media screen and (max-width: 600px) {
@@ -368,9 +373,11 @@ padding-right: 2.8rem;
     }
 }
 
+@media screen and (max-width: 600px) {
 .leftFooter div {
-    padding: 10px;
-    line-height: 10px;
+    padding: 0 10 0 10px;
+    line-height: 12px;
+    }
 }
 
 .leftFooter .address {
@@ -385,6 +392,8 @@ padding-right: 2.8rem;
     color: white;
 }
 
+
+
 .rightFooter ul span {
     font-family: karla;
     font-weight: 600;
@@ -394,8 +403,21 @@ padding-right: 2.8rem;
     font-family: karla;
 }
 
+@media screen and (max-width: 600px) {
+.social span {
+    display: none;
+}
+}
+
 footer .rightFooter {
 padding: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+footer .rightFooter {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
 }
 
 
