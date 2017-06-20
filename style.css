@@ -5,19 +5,30 @@
     background-color: black;
     max-height: 15%;
     max-width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row; 
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row; 
+    -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
     .topbar {
-justify-content: space-around;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 }
 
 .logo-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 250px;
     padding: 5px;
@@ -36,10 +47,13 @@ justify-content: space-around;
 
 
 .nav-icons ul{ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
     color: white;
     padding: 20px 10px 20px 0px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 300px;
     font-family: Karla;
     text-transform: uppercase;
@@ -237,26 +251,33 @@ body {
 
 .image-banner {
 display: block;
-justify-content: space-around;
-  flex-flow: row; 
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row; 
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
     .image-banner {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 }
 
 .image-banner img {
     margin: 5px;
-    box-shadow: 0px 1px 3px 1px grey;
+    -webkit-box-shadow: 0px 1px 3px 1px grey;
+            box-shadow: 0px 1px 3px 1px grey;
     width: 31%;
 }
 
 @media screen and (max-width: 600px) {
     .image-banner img {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 90%;
     height: auto;
     min-width: 300px;
@@ -279,15 +300,21 @@ p {
 }
 
 .rentalbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
     .rentalbox {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 
@@ -367,20 +394,32 @@ td:hover {
     background-color: #242424;
     max-height: 400px; /* Check this is right size later */
     max-width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 16px;
     color: white;
-    flex-flow: row; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row; 
     font-family: karla;
 }
 
 @media screen and (max-width: 600px) {
     .footer {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         max-height: none;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
@@ -392,8 +431,13 @@ td:hover {
 footer .leftfooter {
 padding-top: 1rem;
 padding-left: 2rem;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 margin: 3px;
 padding-right: 2.8rem;
 line-height: 0.8;
