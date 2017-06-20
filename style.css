@@ -24,12 +24,12 @@ justify-content: space-around;
     padding-left: 20px;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     .logo-pic {
     padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 15px;
-}
+    padding-left: 30px;
+    padding-right: 30px;
+    }
 }
 
 /* General settings for fonts, sizes, etc. Accessibility settings. */
@@ -45,6 +45,12 @@ justify-content: space-around;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+    .nav-icons ul {
+    padding-top: 10px;
+    }
 }
 
 .nav-icons a {
@@ -74,14 +80,19 @@ justify-content: space-around;
 
 .topbox {
     color: white;
-    text-align: center; /* How do I get the text to move down in the image? */
+    text-align: center; 
     height: 500px;
-    /* margin: 20px; */
     background-image: url("Images/kayak-bkgd.jpg"); /* Shorthand this later */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0,0,0,0.15); /* These two lines of code darken the background so it's easier to read text */
     background-blend-mode: darken; 
+}
+
+@media screen and (max-width: 600px) {
+    .topbox {
+        height: 425px;
+    }
 }
 
 .topbox h1 {
@@ -93,7 +104,8 @@ justify-content: space-around;
 @media screen and (max-width: 600px) {
     .topbox h1 {
     font-size: 24px;
-}
+    padding-top: 40px;
+    }
 }
 
 .topbox h2 {
@@ -105,7 +117,14 @@ justify-content: space-around;
     .topbox h2 {
     font-size: 60px;
     padding-top: 30px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h2 {
+    font-size: 40px;
+    padding-top: 25px;
+    }
 }
 
 .topbox h3 {
@@ -117,7 +136,14 @@ justify-content: space-around;
     .topbox h3 {
     padding-top: 20px;
     font-size: 36px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    }
 }
 
 .topbox div {
@@ -127,7 +153,7 @@ justify-content: space-around;
 
 .topbox h4 {
     padding-top: 1px;
-    line-height: 33px; /* Why isnt this working??? */
+    line-height: 33px; 
 }
 
 .topbox h4 span { /* This targets just the area that has text */
@@ -138,11 +164,23 @@ justify-content: space-around;
 @media screen and (max-width: 600px) {
     .topbox h4 span  {
     line-height: 33px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h4 span  {
+    font-size: 16px;
+    }
 }
 
 .topbox h5 {
     padding-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .topbox h5 {
+        padding-top: 20px;
+    }
 }
 
 .topbox h5 span {
@@ -222,7 +260,7 @@ justify-content: space-around;
     width: 90%;
     height: auto;
     min-width: 300px;
-}
+    }
 }
 
 /* Rentals Section */
@@ -282,7 +320,7 @@ table, th, td {
 
 @media screen and (max-width: 600px) {
     table, th, td {
-        padding: 15px;
+        padding: 12px;
     }
 }
 
@@ -348,6 +386,7 @@ td:hover {
 
 .phone a {
     color: white;
+    line-height: 30px;
 }
 
 footer .leftfooter {
@@ -420,26 +459,3 @@ footer .rightfooter {
     padding-right: 5rem;
     }
 }
-
-
-
-/*
-Typography:
-
-The base font size is 16px for all screen sizes
-The main font family is Karla
-The secondary font family is Pacifico
-Colours:
-
-!The HEX code for the body font colour is #2d2d2d
-!The HEX code for the medium grey headings is #646464
-!The HEX code for orange brand colour is #e2574c (used for links and buttons)
-The HEX code for the darker orange colour is #b64036 (used for the link and button hover state)
-!The HEX code for the table header background is #e6e6e6
-!The HEX code for the grey table borders #c8c8c8
-The HEX code for the light yellow of the hovered table rows is #fbf6d9
-Screen Sizes
-
-The breakpoint of the desktop-friendly content area is 1140px
-The breakpoint of the tablet-friendly content area is 600px
-*/
