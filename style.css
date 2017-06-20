@@ -5,40 +5,55 @@
     background-color: black;
     max-height: 15%;
     max-width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row; 
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row; 
+    -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px) {
     .topbar {
-justify-content: space-around;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 }
 
-.logoPic {
+.logo-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 250px;
     padding: 5px;
     padding-left: 20px;
 }
 
-@media screen and (max-width: 599px) {
-    .logoPic {
+@media screen and (max-width: 600px) {
+    .logo-pic {
     padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 15px;
-}
+    padding-left: 30px;
+    padding-right: 30px;
+    }
 }
 
 /* General settings for fonts, sizes, etc. Accessibility settings. */
 
-.navIcons ul{ 
+
+.nav-icons ul{ 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
     display: flex;
     color: white;
     padding: 20px 10px 20px 0px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 300px;
     font-family: Karla;
     text-transform: uppercase;
@@ -46,7 +61,13 @@ justify-content: space-around;
     font-weight: bold;
 }
 
-.navIcons a {
+@media screen and (max-width: 450px) {
+    .nav-icons ul {
+    padding-top: 10px;
+    }
+}
+
+.nav-icons a {
     text-decoration: none;
     color: white;
 }
@@ -73,14 +94,19 @@ justify-content: space-around;
 
 .topbox {
     color: white;
-    text-align: center; /* How do I get the text to move down in the image? */
+    text-align: center; 
     height: 500px;
-    /* margin: 20px; */
     background-image: url("Images/kayak-bkgd.jpg"); /* Shorthand this later */
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(0,0,0,0.15); /* These two lines of code darken the background so it's easier to read text */
     background-blend-mode: darken; 
+}
+
+@media screen and (max-width: 600px) {
+    .topbox {
+        height: 425px;
+    }
 }
 
 .topbox h1 {
@@ -92,7 +118,8 @@ justify-content: space-around;
 @media screen and (max-width: 600px) {
     .topbox h1 {
     font-size: 24px;
-}
+    padding-top: 40px;
+    }
 }
 
 .topbox h2 {
@@ -104,7 +131,14 @@ justify-content: space-around;
     .topbox h2 {
     font-size: 60px;
     padding-top: 30px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h2 {
+    font-size: 40px;
+    padding-top: 25px;
+    }
 }
 
 .topbox h3 {
@@ -116,7 +150,14 @@ justify-content: space-around;
     .topbox h3 {
     padding-top: 20px;
     font-size: 36px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h3 {
+    padding-top: 20px;
+    font-size: 24px;
+    }
 }
 
 .topbox div {
@@ -126,7 +167,7 @@ justify-content: space-around;
 
 .topbox h4 {
     padding-top: 1px;
-    line-height: 33px; /* Why isnt this working??? */
+    line-height: 33px; 
 }
 
 .topbox h4 span { /* This targets just the area that has text */
@@ -137,11 +178,23 @@ justify-content: space-around;
 @media screen and (max-width: 600px) {
     .topbox h4 span  {
     line-height: 33px;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .topbox h4 span  {
+    font-size: 16px;
+    }
 }
 
 .topbox h5 {
     padding-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .topbox h5 {
+        padding-top: 20px;
+    }
 }
 
 .topbox h5 span {
@@ -181,34 +234,54 @@ h6 {
 	}
 }
 
+@media screen and (min-width: 1140px) {
+	body{
+		margin: auto;
+        width: 1140px;
+	}
+}
+
+body {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+}
+
 /* Image Banner */
 
 .image-banner {
 display: block;
-justify-content: space-around;
-  flex-flow: row; 
+-ms-flex-pack: distribute;
+    justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row; 
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
     .image-banner {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 }
 
 .image-banner img {
     margin: 5px;
-    box-shadow: 0px 1px 3px 1px grey;
+    -webkit-box-shadow: 0px 1px 3px 1px grey;
+            box-shadow: 0px 1px 3px 1px grey;
     width: 31%;
 }
 
 @media screen and (max-width: 600px) {
     .image-banner img {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 90%;
     height: auto;
     min-width: 300px;
-}
+    }
 }
 
 /* Rentals Section */
@@ -226,32 +299,38 @@ p {
     padding: 50 10 50 10px;
 }
 
-.rentalBox {
+.rentalbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 20px;
 }
 
 @media screen and (max-width: 600px) {
-    .rentalBox {
-        flex-wrap: wrap;
+    .rentalbox {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 
-.rentalBox span {
+.rentalbox span {
     color: #e2574c;
     text-decoration: underline;
 }
 
-.rentalBox p {
+.rentalbox p {
     max-width: 500px;
     width: 45%;
     margin-right: 10px;
 }
 
 @media screen and (max-width: 600px) {
-    .rentalBox p {
+    .rentalbox p {
     width: 90%;
     }
 }
@@ -268,7 +347,7 @@ table, th, td {
 
 @media screen and (max-width: 600px) {
     table, th, td {
-        padding: 15px;
+        padding: 12px;
     }
 }
 
@@ -315,39 +394,57 @@ td:hover {
     background-color: #242424;
     max-height: 400px; /* Check this is right size later */
     max-width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 16px;
     color: white;
-    flex-flow: row; 
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row; 
     font-family: karla;
 }
 
 @media screen and (max-width: 600px) {
     .footer {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         max-height: none;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
 
 .phone a {
-    color: gray;
+    color: white;
+    line-height: 30px;
 }
 
-footer .leftFooter {
+footer .leftfooter {
 padding-top: 1rem;
 padding-left: 2rem;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 margin: 3px;
 padding-right: 2.8rem;
 line-height: 0.8;
 }
 
 @media screen and (max-width: 600px) {
-    footer .leftFooter {
+    footer .leftfooter {
         padding-top: 50px;
         text-align: center;
         line-height: 0.9;
@@ -355,33 +452,33 @@ line-height: 0.8;
 }
 
 @media screen and (max-width: 600px) {
-.leftFooter div {
+.leftfooter div {
     padding: 0 10 0 10px;
     line-height: 12px;
     }
 }
 
-.leftFooter .address {
+.leftfooter .address {
     color: #969696;
 }
 
-.rightFooter ul li{
+.rightfooter ul li{
     padding: 5px;
 }
 
 @media screen and (max-width: 600px) {
-    .rightFooter ul li{
+    .rightfooter ul li{
     display: inline-block;
     }
 }
 
-.rightFooter a {
+.rightfooter a {
     color: white;
 }
 
 
 
-.rightFooter ul span {
+.rightfooter ul span {
     font-family: karla;
     font-weight: 600;
 }
@@ -396,36 +493,13 @@ line-height: 0.8;
 }
 }
 
-footer .rightFooter {
+footer .rightfooter {
 padding: 2.5rem;
 }
 
 @media screen and (max-width: 600px) {
-footer .rightFooter {
+footer .rightfooter {
     padding-left: 5rem;
     padding-right: 5rem;
     }
 }
-
-
-
-/*
-Typography:
-
-The base font size is 16px for all screen sizes
-The main font family is Karla
-The secondary font family is Pacifico
-Colours:
-
-!The HEX code for the body font colour is #2d2d2d
-!The HEX code for the medium grey headings is #646464
-!The HEX code for orange brand colour is #e2574c (used for links and buttons)
-The HEX code for the darker orange colour is #b64036 (used for the link and button hover state)
-!The HEX code for the table header background is #e6e6e6
-!The HEX code for the grey table borders #c8c8c8
-The HEX code for the light yellow of the hovered table rows is #fbf6d9
-Screen Sizes
-
-The breakpoint of the desktop-friendly content area is 1140px
-The breakpoint of the tablet-friendly content area is 600px
-*/
